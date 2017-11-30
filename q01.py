@@ -3,6 +3,7 @@
 from gmsdk.api import StrategyBase
 import numpy as np
 import pandas as pd
+import time
 
 df = pd.DataFrame( columns = ['strtime','strendtime', 'open', 'close'] )
 
@@ -38,7 +39,7 @@ class Mystrategy( StrategyBase ):
                             'open': bar.open,
                             'close': bar.close }
 
-        print(df.tail(3))
+        print(df.tail(53))
         print(' ')
 
         # print(type(bar[0]))
@@ -74,7 +75,7 @@ if __name__ == '__main__':
         username = 'asialiugf@sina.com',
         password = 'it@iZ23psatkqsZ',
         strategy_id = 'a3a17499-d18c-11e7-aefa-68f7283cd5ae',
-        subscribe_symbols = 'SHFE.ru1801.tick,SHFE.ru1801.bar.15,SHFE.ru1801.bar.5',
+        subscribe_symbols = 'SHFE.ru1801.tick,SHFE.ru1801.bar.15',
         mode = 4,
         td_addr = '127.0.0.1:8001'
     )

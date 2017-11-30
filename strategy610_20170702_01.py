@@ -38,7 +38,7 @@ def get_data( begin_time, end_time, period ):
     """
     # df = ts.get_hist_data(code, start=begin_time, end=end_time)
     # df = ts.get_hist_data('600848')
-    #ret = md.init( "13601380996", "it@iZ23psatkqsZ" )
+    #ret = md.init( "asialiugf@sina.com", "it@iZ23psatkqsZ" )
     """
     下面的tt.get_bars() 可以不用 md.init();
     在myquant.py中，已经有  md.init();
